@@ -220,10 +220,15 @@ section.skills div {
 .footer {
   background-color: #e7e4e4;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1rem;
 }
 .footer a {
   text-decoration: none;
 }
 .footer a i {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
 }
