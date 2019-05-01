@@ -3,33 +3,55 @@
 .container {
     margin: 0 auto;
     max-width: 500px;
+    @media(min-width: 1024px){
+        max-width: 800px;
+    }
 }
 
 /* MENU */
-.nav-bar {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0.5rem;
-    padding: 0.5rem; 
-    
-    a {
-        font-size: 1rem;
-        padding: 0.5rem 0;
-        text-decoration: none;
-        color: darkgray;
 
-        &:hover {
-            color: @mainColour;
-        }
+header {
+    @media(min-width: 1024px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
     }
-
+    
+    .nav-bar {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        padding: 0.5rem; 
+        @media(min-width: 1024px){
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        a {
+            font-size: 1rem;
+            padding: 0.5rem 0;
+            text-decoration: none;
+            color: darkgray;
+            @media(min-width: 1024px){
+                padding: 1rem;
+            }
+    
+            &:hover {
+                color: @mainColour;
+            }
+        }
+    
+    }
 }
+
 
 div.logo {
     text-align: center;
     margin: 1rem;
-    font-size: 2rem;
+    padding: 0.5rem;
+    font-size: 3rem;
 
     span {
         color: @mainColour;
@@ -48,6 +70,9 @@ section.banner {
     justify-content: center;
     background-color: rgb(231, 228, 228);
     padding: 1rem;
+    @media(min-width: 1024px){
+        flex-direction: row;
+    }
 
     img{
         border-radius: 50%;
@@ -55,11 +80,19 @@ section.banner {
         height: auto;
         display: block;
         margin: 0 auto;
+        @media(min-width: 1024px){
+            max-width: 100%;
+        }
+    }
+
+    div {
+        padding: 1rem;
+        margin: auto;
     }
 
     h3 {
         text-align: center;
-        font-size: 1rem;
+        font-size: 2rem;
         font-weight: bold;
         padding: 1rem 0;
     }
@@ -77,23 +110,43 @@ section.skills {
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
-
-    h3 {
-        text-align: center;
-        font-size: 1rem;
-        font-weight: bold;
-        padding: 1rem 0;
-    }
-    p {
-        text-align: justify;
-        font-size: 1rem;
-        line-height: 1.5rem;
+    @media(min-width: 1024px){
+        flex-direction: row;
+        justify-content: space-around;
     }
 
-    div {
-        padding: 1rem 0;
-        text-align: center;
+    .content {
+        @media(min-width: 1024px){
+            max-width: 50%;
+            margin-left: 1rem;
+        }
+    
+        h3 {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 1rem 0;
+        }
+        p {
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+    
+        li {
+            padding: 0.5rem 0;
+            line-height: 1rem;
+            text-align: center;
+            @media(min-width: 1024px){
+                text-align: left;
+            }
+            &:hover {
+                border-bottom: 1px solid #fe5f55;
+            }
+            
+        }
     }
+    
 
 }
 

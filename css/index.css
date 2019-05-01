@@ -135,31 +135,59 @@ body {
   height: 100%;
   font-family: 'Dosis', sans-serif;
 }
+:root {
+  font-size: 100%;
+}
 .container {
   margin: 0 auto;
   max-width: 500px;
 }
+@media (min-width: 1024px) {
+  .container {
+    max-width: 800px;
+  }
+}
 /* MENU */
-.nav-bar {
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+header .nav-bar {
   text-align: center;
   display: flex;
   flex-direction: column;
   margin: 0.5rem;
   padding: 0.5rem;
 }
-.nav-bar a {
+@media (min-width: 1024px) {
+  header .nav-bar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+header .nav-bar a {
   font-size: 1rem;
   padding: 0.5rem 0;
   text-decoration: none;
   color: darkgray;
 }
-.nav-bar a:hover {
+@media (min-width: 1024px) {
+  header .nav-bar a {
+    padding: 1rem;
+  }
+}
+header .nav-bar a:hover {
   color: #fe5f55;
 }
 div.logo {
   text-align: center;
   margin: 1rem;
-  font-size: 2rem;
+  padding: 0.5rem;
+  font-size: 3rem;
 }
 div.logo span {
   color: #fe5f55;
@@ -177,6 +205,11 @@ section.banner {
   background-color: #e7e4e4;
   padding: 1rem;
 }
+@media (min-width: 1024px) {
+  section.banner {
+    flex-direction: row;
+  }
+}
 section.banner img {
   border-radius: 50%;
   max-width: 30%;
@@ -184,9 +217,18 @@ section.banner img {
   display: block;
   margin: 0 auto;
 }
+@media (min-width: 1024px) {
+  section.banner img {
+    max-width: 100%;
+  }
+}
+section.banner div {
+  padding: 1rem;
+  margin: auto;
+}
 section.banner h3 {
   text-align: center;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   padding: 1rem 0;
 }
@@ -202,20 +244,41 @@ section.skills {
   justify-content: center;
   padding: 1rem;
 }
-section.skills h3 {
+@media (min-width: 1024px) {
+  section.skills {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1024px) {
+  section.skills .content {
+    max-width: 50%;
+    margin-left: 1rem;
+  }
+}
+section.skills .content h3 {
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
   padding: 1rem 0;
 }
-section.skills p {
+section.skills .content p {
   text-align: justify;
   font-size: 1rem;
   line-height: 1.5rem;
 }
-section.skills div {
-  padding: 1rem 0;
+section.skills .content li {
+  padding: 0.5rem 0;
+  line-height: 1rem;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  section.skills .content li {
+    text-align: left;
+  }
+}
+section.skills .content li:hover {
+  border-bottom: 1px solid #fe5f55;
 }
 .footer {
   background-color: #e7e4e4;
