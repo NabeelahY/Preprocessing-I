@@ -135,3 +135,85 @@ body {
   height: 100%;
   font-family: 'Dosis', sans-serif;
 }
+.container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+/* MENU */
+.nav-bar {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.nav-bar a {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: darkgray;
+}
+.nav-bar a:hover {
+  color: #fe5f55;
+}
+div.logo {
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem;
+}
+div.logo span {
+  color: #fe5f55;
+  font-weight: bold;
+}
+main {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+section.banner {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e7e4e4;
+  padding: 1rem;
+}
+section.banner img {
+  border-radius: 50%;
+  max-width: 30%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+section.banner h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+section.banner p {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+section.skills {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+section.skills h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+section.skills p {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+section.skills div {
+  padding: 1rem 0;
+  text-align: center;
+}

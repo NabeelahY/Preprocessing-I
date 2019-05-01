@@ -1,0 +1,99 @@
+@mainColour : #fe5f55;
+
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+/* MENU */
+.nav-bar {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 0.5rem; 
+    
+    a {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        text-decoration: none;
+        color: darkgray;
+
+        &:hover {
+            color: @mainColour;
+        }
+    }
+
+}
+
+div.logo {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+
+    span {
+        color: @mainColour;
+        font-weight: bold;
+    }
+}
+main{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+section.banner {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(231, 228, 228);
+    padding: 1rem;
+
+    img{
+        border-radius: 50%;
+        max-width: 30%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1rem 0;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+section.skills {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+
+    h3 {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1rem 0;
+    }
+    p {
+        text-align: justify;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    div {
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+
+}
