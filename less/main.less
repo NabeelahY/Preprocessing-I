@@ -1,4 +1,7 @@
 @mainColour : #fe5f55;
+@backgroundColour: rgb(231, 228, 228);
+@sizeSmall: 0.5rem;
+@mediumSize: 1rem;
 
 .container {
     margin: 0 auto;
@@ -22,20 +25,20 @@ header {
         text-align: center;
         display: flex;
         flex-direction: column;
-        margin: 0.5rem;
-        padding: 0.5rem; 
+        margin: @sizeSmall;
+        padding: @sizeSmall; 
         @media(min-width: 1024px){
             flex-direction: row;
             justify-content: space-between;
         }
         
         a {
-            font-size: 1rem;
-            padding: 0.5rem 0;
+            font-size: @mediumSize;
+            padding: @sizeSmall 0;
             text-decoration: none;
             color: darkgray;
             @media(min-width: 1024px){
-                padding: 1rem;
+                padding: @mediumSize;
             }
     
             &:hover {
@@ -46,11 +49,11 @@ header {
     }
 }
 
-
+/* LOGO */
 div.logo {
     text-align: center;
-    margin: 1rem;
-    padding: 0.5rem;
+    margin: @mediumSize;
+    padding: @sizeSmall;
     font-size: 3rem;
 
     span {
@@ -59,17 +62,19 @@ div.logo {
     }
 }
 main{
-    margin: 0.5rem;
-    padding: 0.5rem;
+    margin: @sizeSmall;
+    padding: @sizeSmall;
 }
 
+
+/* BANNER */
 section.banner {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(231, 228, 228);
-    padding: 1rem;
+    background-color: @backgroundColour;
+    padding: @mediumSize;
     @media(min-width: 1024px){
         flex-direction: row;
     }
@@ -86,7 +91,7 @@ section.banner {
     }
 
     div {
-        padding: 1rem;
+        padding: @mediumSize;
         margin: auto;
     }
 
@@ -94,22 +99,24 @@ section.banner {
         text-align: center;
         font-size: 2rem;
         font-weight: bold;
-        padding: 1rem 0;
+        padding: @mediumSize 0;
     }
 
     p {
         text-align: justify;
-        font-size: 1rem;
+        font-size: @mediumSize;
         line-height: 1.5rem;
     }
 }
+
+/* SKILLS SECTION */
 
 section.skills {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
+    padding: @mediumSize;
     @media(min-width: 1024px){
         flex-direction: row;
         justify-content: space-around;
@@ -118,14 +125,14 @@ section.skills {
     .content {
         @media(min-width: 1024px){
             max-width: 50%;
-            margin-left: 1rem;
+            margin-left: @mediumSize;
         }
     
         h3 {
             text-align: center;
-            font-size: 1rem;
+            font-size: @mediumSize;
             font-weight: bold;
-            padding: 1rem 0;
+            padding: @mediumSize 0;
         }
         p {
             text-align: justify;
@@ -134,14 +141,14 @@ section.skills {
         }
     
         li {
-            padding: 0.5rem 0;
+            padding: @sizeSmall 0;
             line-height: 1rem;
             text-align: center;
             @media(min-width: 1024px){
                 text-align: left;
             }
             &:hover {
-                border-bottom: 1px solid #fe5f55;
+                border-bottom: 1px solid @mainColour;
             }
             
         }
@@ -149,20 +156,56 @@ section.skills {
     
 
 }
+ 
+/* PROJECT SECTION */
+.projects {
 
+    h3 {
+        text-align: center;
+        padding: @mediumSize;
+        margin: @mediumSize;
+        font-weight: bold;
+    }
+    .imgs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media(min-width: 1024px){
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        img{
+            width: 95%;
+            margin: @sizeSmall;
+            &:hover {
+                border: 1.5px solid @mainColour;
+                padding: @mediumSize;
+            }
+        }
+    }
+}
+
+/* FOOTER */
 .footer {
-    background-color: rgb(231, 228, 228);
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    line-height: 1rem;
+    background-color: @backgroundColour;
+    padding: @mediumSize; 
+    .contact {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @media(min-width: 1024px){
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+    }
 
     a {
         text-decoration: none;
         i{
             font-size: 1.5rem;
-            padding: 0 0.5rem;
+            padding: 0 @sizeSmall;
         }
     }
 

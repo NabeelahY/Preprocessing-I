@@ -183,6 +183,7 @@ header .nav-bar a {
 header .nav-bar a:hover {
   color: #fe5f55;
 }
+/* LOGO */
 div.logo {
   text-align: center;
   margin: 1rem;
@@ -197,6 +198,7 @@ main {
   margin: 0.5rem;
   padding: 0.5rem;
 }
+/* BANNER */
 section.banner {
   margin: 0 auto;
   display: flex;
@@ -237,6 +239,7 @@ section.banner p {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+/* SKILLS SECTION */
 section.skills {
   margin: 0 auto;
   display: flex;
@@ -280,13 +283,48 @@ section.skills .content li {
 section.skills .content li:hover {
   border-bottom: 1px solid #fe5f55;
 }
+/* PROJECT SECTION */
+.projects h3 {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+.projects .imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  .projects .imgs {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.projects .imgs img {
+  width: 95%;
+  margin: 0.5rem;
+}
+.projects .imgs img:hover {
+  border: 1.5px solid #fe5f55;
+  padding: 1rem;
+}
+/* FOOTER */
 .footer {
   background-color: #e7e4e4;
   padding: 1rem;
+}
+.footer .contact {
   display: flex;
   flex-direction: column;
   text-align: center;
-  line-height: 1rem;
+}
+@media (min-width: 1024px) {
+  .footer .contact {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 .footer a {
   text-decoration: none;
