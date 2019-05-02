@@ -1,1 +1,335 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Dosis', sans-serif;
+}
+:root {
+  font-size: 100%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 800px;
+  }
+}
+/* MENU */
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+header .nav-bar {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+@media (min-width: 1024px) {
+  header .nav-bar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+header .nav-bar a {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: darkgray;
+}
+@media (min-width: 1024px) {
+  header .nav-bar a {
+    padding: 1rem;
+  }
+}
+header .nav-bar a:hover {
+  color: #fe5f55;
+}
+/* LOGO */
+div.logo {
+  text-align: center;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 3rem;
+}
+div.logo span {
+  color: #fe5f55;
+  font-weight: bold;
+}
+main {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+/* BANNER */
+section.banner {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e7e4e4;
+  padding: 1rem;
+}
+@media (min-width: 1024px) {
+  section.banner {
+    flex-direction: row;
+  }
+}
+section.banner img {
+  border-radius: 50%;
+  max-width: 30%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  section.banner img {
+    max-width: 100%;
+  }
+}
+section.banner div {
+  padding: 1rem;
+  margin: auto;
+}
+section.banner h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+section.banner p {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+/* SKILLS SECTION */
+section.skills {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+@media (min-width: 1024px) {
+  section.skills {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1024px) {
+  section.skills .content {
+    max-width: 50%;
+    margin-left: 1rem;
+  }
+}
+section.skills .content h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+section.skills .content p {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+section.skills .content li {
+  padding: 0.5rem 0;
+  line-height: 1rem;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  section.skills .content li {
+    text-align: left;
+  }
+}
+section.skills .content li:hover {
+  border-bottom: 1px solid #fe5f55;
+}
+/* PROJECT SECTION */
+.projects h3 {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+.projects .imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  .projects .imgs {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.projects .imgs img {
+  width: 95%;
+  margin: 0.5rem;
+}
+.projects .imgs img:hover {
+  border: 1.5px solid #fe5f55;
+  padding: 1rem;
+}
+/* FOOTER */
+.footer {
+  background-color: #e7e4e4;
+  padding: 1rem;
+}
+.footer .contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .footer .contact {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a i {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}
