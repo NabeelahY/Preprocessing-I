@@ -187,12 +187,17 @@ section.skills {
 }
 
 /* FOOTER */
+.flex-display(@direction){
+    display: flex;
+    flex-direction: @direction;
+}
 .footer {
     background-color: @backgroundColour;
     padding: @mediumSize; 
     .contact {
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
+        .flex-display(column);
         text-align: center;
         @media(min-width: 1024px){
             flex-direction: row;
